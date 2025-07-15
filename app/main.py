@@ -3,8 +3,7 @@ import logging.config
 import os 
 
 from fastapi import FastAPI
-
-from .predictor import Predictor 
+from app.api.endpoints import router
 
 if not os.path.exists("logs"):
     os.mkdir("logs")
